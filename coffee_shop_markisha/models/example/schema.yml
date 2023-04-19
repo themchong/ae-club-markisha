@@ -19,3 +19,21 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: customers
+    description: "A clean customers dbt model"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: customers
+    description: "a model with count of new customers per month"
+    columns:
+      - name: signup_month
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null        
