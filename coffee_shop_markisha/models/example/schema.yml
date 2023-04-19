@@ -29,7 +29,7 @@ models:
           - unique
           - not_null
 
-  - name: customers
+  - name: monthly_customers
     description: "a model with count of new customers per month"
     columns:
       - name: signup_month
